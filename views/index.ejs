@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% for (const message of messages) { %>
+    <p><b><%= message.user %></b></p>
+    <p><%= message.text %></p>
+    <p><%= message.added %></p>
+    <a href="<%= message.user %>"> Open Details</a>
+    <% } %>
+    <br />
+    <a href="/new">Enter a new message.</a>
+  </body>
+</html>

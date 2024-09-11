@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <h1>This is the form page.</h1>
+    <form method="POST" action="/new">
+      <div>
+        <label for="name">Enter Your Name</label>
+        <input type="text" placeholder="ABC, XYZ" id="name" name="name" />
+      </div>
+      <div>
+        <label for="message">Enter a message</label>
+        <input
+          type="text"
+          placeholder="Some Text"
+          id="message"
+          name="messageText"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
